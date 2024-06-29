@@ -25,6 +25,7 @@ def detect_crop_disease(image_path):
     
     disease, treatment = disease_mapping.get(predicted_class[0], ("Unknown Disease", "Consult an agricultural expert"))
     return disease, treatment
+
 def detect_animal_disease(symptoms):
     # Simulate detection for animal diseases based on symptoms using a more comprehensive dataset
     dataset = {
@@ -54,9 +55,9 @@ def detect_animal_disease(symptoms):
 def recommend_crop_treatment(disease_name):
     # Placeholder for actual treatment recommendation logic
     treatments = {
-        "Disease A": "Apply nitrogen-based fertilizer. Ensure proper soil pH and monitor for pest activity.",
-        "Disease B": "Use fungicide treatment. Rotate crops to prevent recurrence and improve soil health.",
-        "Disease C": "Increase watering frequency. Mulch around the base of the plants to retain moisture.",
+        "Disease A": "For Disease A, it is recommended to apply a nitrogen-based fertilizer such as urea or ammonium nitrate. Ensure proper soil pH by conducting a soil test and adjusting accordingly. Monitor for pest activity and take appropriate measures to control pests if necessary.",
+        "Disease B": "For Disease B, use a fungicide treatment such as copper-based fungicides or sulfur. Rotate crops to prevent recurrence and improve soil health. Ensure proper spacing between plants to allow for adequate air circulation and reduce humidity levels.",
+        "Disease C": "For Disease C, increase watering frequency to maintain consistent soil moisture levels. Mulch around the base of the plants to retain moisture and reduce evaporation. Consider using drip irrigation to provide a steady supply of water directly to the plant roots.",
     }
     
     if disease_name in treatments:
@@ -72,16 +73,16 @@ def recommend_crop_treatment(disease_name):
 def recommend_animal_treatment(disease_name):
     # Treatment recommendations based on disease name with more comprehensive suggestions
     treatments = {
-        "Rabies": "Administer rabies vaccine and consult a veterinarian. Ensure the animal is isolated to prevent the spread of the disease.",
-        "Foot-and-Mouth Disease": "Isolate the infected animal and consult a veterinarian. Disinfect the area and monitor other animals for symptoms.",
-        "Avian Influenza": "Isolate the infected birds and consult a veterinarian. Implement biosecurity measures to prevent further spread.",
-        "Bovine Spongiform Encephalopathy (Mad Cow Disease)": "Consult a veterinarian immediately. Follow regulatory guidelines for handling and reporting.",
-        "Canine Parvovirus": "Administer fluids and consult a veterinarian. Ensure proper sanitation to prevent the spread of the virus.",
-        "Feline Leukemia Virus": "Consult a veterinarian for antiviral treatment. Provide supportive care and monitor the animal's condition.",
-        "Newcastle Disease": "Isolate the infected birds and consult a veterinarian. Implement strict biosecurity measures.",
-        "Swine Influenza": "Isolate the infected pigs and consult a veterinarian. Monitor the herd for additional cases.",
-        "Equine Infectious Anemia": "Consult a veterinarian for supportive care. Follow regulatory guidelines for testing and reporting.",
-        "Scrapie": "Consult a veterinarian for management. Follow regulatory guidelines for handling and reporting."
+        "Rabies": "For Rabies, administer a rabies vaccine immediately and consult a veterinarian. Ensure the animal is isolated to prevent the spread of the disease. Provide supportive care such as fluids and pain management as directed by the veterinarian.",
+        "Foot-and-Mouth Disease": "For Foot-and-Mouth Disease, isolate the infected animal and consult a veterinarian. Disinfect the area thoroughly and monitor other animals for symptoms. Provide supportive care such as fluids and pain management as directed by the veterinarian.",
+        "Avian Influenza": "For Avian Influenza, isolate the infected birds and consult a veterinarian. Implement biosecurity measures such as restricting access to the area and disinfecting equipment and clothing. Provide supportive care such as fluids and pain management as directed by the veterinarian.",
+        "Bovine Spongiform Encephalopathy (Mad Cow Disease)": "For Bovine Spongiform Encephalopathy (Mad Cow Disease), consult a veterinarian immediately. Follow regulatory guidelines for handling and reporting the disease. Provide supportive care such as fluids and pain management as directed by the veterinarian.",
+        "Canine Parvovirus": "For Canine Parvovirus, administer fluids to prevent dehydration and consult a veterinarian. Ensure proper sanitation to prevent the spread of the virus. Provide supportive care such as pain management and anti-nausea medication as directed by the veterinarian.",
+        "Feline Leukemia Virus": "For Feline Leukemia Virus, consult a veterinarian for antiviral treatment options such as interferon or zidovudine. Provide supportive care such as fluids, nutritional support, and pain management as directed by the veterinarian. Monitor the animal's condition closely and provide a stress-free environment.",
+        "Newcastle Disease": "For Newcastle Disease, isolate the infected birds and consult a veterinarian. Implement strict biosecurity measures such as restricting access to the area and disinfecting equipment and clothing. Provide supportive care such as fluids and pain management as directed by the veterinarian.",
+        "Swine Influenza": "For Swine Influenza, isolate the infected pigs and consult a veterinarian. Monitor the herd for additional cases and implement biosecurity measures such as restricting access to the area and disinfecting equipment and clothing. Provide supportive care such as fluids and pain management as directed by the veterinarian.",
+        "Equine Infectious Anemia": "For Equine Infectious Anemia, consult a veterinarian for supportive care such as fluids, nutritional support, and pain management. Follow regulatory guidelines for testing and reporting the disease. Monitor the animal's condition closely and provide a stress-free environment.",
+        "Scrapie": "For Scrapie, consult a veterinarian for management options such as culling infected animals and implementing biosecurity measures. Follow regulatory guidelines for handling and reporting the disease. Provide supportive care such as fluids and pain management as directed by the veterinarian.",
     }
     
     if disease_name in treatments:
@@ -93,4 +94,3 @@ def recommend_animal_treatment(disease_name):
             return treatments[closest_match[0]]
         else:
             raise ValueError("No treatment recommendation available for the disease, recommend you to contact a veterinarian")
-
