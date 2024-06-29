@@ -1,0 +1,42 @@
+{
+    "Foot-and-Mouth Disease": {
+        "symptoms": ["Fever", "blisters in the mouth and on feet", "lameness"],
+        "affected_animals": ["Cattle", "Sheep", "Goats", "Pigs"]
+    },
+    "Rabies": {
+        "symptoms": ["Fever", "headache", "excess salivation", "muscle spasms", "paralysis", "mental confusion"],
+        "affected_animals": ["Dogs", "Cats", "Cattle", "Horses", "Bats"]
+    },
+    "Avian Influenza": {
+        "symptoms": ["Coughing", "sneezing", "nasal discharge", "swollen sinuses", "decreased egg production"],
+        "affected_animals": ["Chickens", "Turkeys", "Ducks", "Geese"]
+    },
+    "Bovine Spongiform Encephalopathy (Mad Cow Disease)": {
+        "symptoms": ["Nervousness", "aggression", "lack of coordination", "difficulty in standing up"],
+        "affected_animals": ["Cattle"]
+    },
+    "Canine Parvovirus": {
+        "symptoms": ["Severe", "bloody diarrhea", "lethargy", "anorexia", "fever", "vomiting"],
+        "affected_animals": ["Dogs"]
+    },
+    "Feline Leukemia Virus": {
+        "symptoms": ["Loss of appetite", "slow but progressive weight loss", "poor coat condition", "enlarged lymph nodes"],
+        "affected_animals": ["Cats"]
+    },
+    "Newcastle Disease": {
+        "symptoms": ["Respiratory distress", "nervous signs", "drop in egg production", "greenish diarrhea"],
+        "affected_animals": ["Chickens", "Turkeys", "Pigeons"]
+    },
+    "Swine Influenza": {
+        "symptoms": ["Coughing", "nasal discharge", "fever", "lethargy", "difficulty breathing"],
+        "affected_animals": ["Pigs"]
+    },
+    "Equine Infectious Anemia": {
+        "symptoms": ["Fever", "depression", "weight loss", "anemia", "swelling of the lower chest", "abdomen", "legs"],
+        "affected_animals": ["Horses"]
+    },
+    "Scrapie": {
+        "symptoms": ["Itching", "behavioral changes", "lack of coordination", "weight loss"],
+        "affected_animals": ["Sheep", "Goats"]
+    }
+}
